@@ -9,12 +9,12 @@
 using namespace std;
 
 
-Dequeue::Dequeue(void){
+//Dequeue::Dequeue(void){
 
 	//ConstructorBanner();
-	dequeueElements.InitializeList();
+	//dequeueElements.InitializeList();
 
-}
+//}
 
 Dequeue::~Dequeue(void){
 
@@ -37,17 +37,22 @@ void Dequeue::DestroyDequeue(){
 
 }//Destroy
 
-Node* Dequeue::GetFirst(){
-	return nullptr;
-}//GetFirst
+//Node* DoublyLinkedList::GetFirst(){
 
-Node* Dequeue::GetLast(){
-	return nullptr;
-}//GetLast
+	//return nullptr;
+
+//}//GetFirst
+
+//Node* DoublyLinkedList::GetLast(){
+
+	//return nullptr;
+
+//}//GetLast
 
 void Dequeue::InitializeDequeue() {
 
 	dequeueElements.InitializeList();
+
 }//Initialize
 
 bool Dequeue::IsEmpty(){
@@ -97,11 +102,11 @@ void Dequeue::EnqueueBack(int datum) {
 		cout << endl;
 	}//if
 	else {
-		if (front = nullptr) {
+		if (back = nullptr) {
 			front = back = newNode;
 		}//if
 		else {// basically oposite of front: 
-			newNode->prev= back;
+			newNode->prev = back;
 			back->next= newNode;
 			back = newNode;
 
@@ -184,11 +189,10 @@ int Dequeue::peekBack() {
 }//peekBack
 
 
-void Dequeue::InitializeDequeue(int &){
+//void Dequeue::InitializeDequeue(int &){
 
-}
+//}
 
 
 
-// PeekBack
 
